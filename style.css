@@ -221,7 +221,143 @@ iframe {
   flex-direction: column;
   justify-content: center;
 }
+
+
+.navigation-bar{
+  font-family: Arapey, serif;
+  font-size: 1.4rem;
+  position:sticky;
+  top:0;
+  z-index: 100;
+}
+
+
+.forlarge{
+  height:50px;
+  width:100%;
+  height:50px;
+  background-color: rgb(29, 28, 28);
+}
+
+.navigation-items{
+  display:flex;
+  height: 100%;
+  padding:0px 20px;
+  position:relative;
+
+}
+.navigation-items >ul{
+  display:flex;
+  list-style: none;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+ margin: 0px;
+ width: 100%;
+ margin-right:5rem;
+
+}
+.brand-name{
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  color:white;
+
+}
+
+
+
+.nav-links{
+
+  text-decoration: none;
+  padding:0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+.nav-a {
+  text-decoration: none;
+  color:white;
+}
+.nav-a:hover{
+  color:white;
+}
+.nav-links:hover{
+  background-color: rgba(190, 184, 184, 0.2);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.menu{
+  position: absolute;
+  top:0;
+  right:30px;
+  color:white;
+  height: 100%;
+ 
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  display:none;
+  
+}
+
+.formobile{
+ 
+  top:0;
+  position: absolute;
+  right:0;
+  width:60vw;
+  height: 100vh;
+  background-color:rgb(29, 28, 28) ;
+  z-index: 999;
+  display: none;
+
+
+}
+.mob{
+  flex-direction: column;
+  
+}
+
+.navigation-items-mob >ul{
+  display:flex;
+  list-style: none;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: left;
+ margin: 0px;
+ width: 100%;
+ margin-right:5rem;
+
+}
+.navigation-items-mob
+{
+  padding-top: 20px;
+}
+.nav-links-m{
+  margin:13px 0px;
+}
+.closeicon{
+  color:white;
+  font-size: 25px;
+  width:25px;
+}
+.surname{
+  color:rgb(186, 221, 11);
+}
+
+
 @media (max-width: 991px) {
+ 
+  .navigation-items >ul{
+    display: none}
+ .menu{
+  display: flex;
+ }
   .c-blank,
   .c2-blank,
   .clast-blank {
@@ -234,6 +370,7 @@ iframe {
     padding: 20px;
     min-height: 300px;
   }
+ 
   .photo > img,
   .photo-last > img {
     padding: 0 20px;
